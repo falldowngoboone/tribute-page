@@ -1,0 +1,86 @@
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+  line-height: $space-h;
+
+  @media (min-width: $mq-md) {
+    // font-size: 18px;
+    font-size: 2.9090909090909vw;
+  }
+
+  @media (min-width: $mq-lg) {
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  background-color: $dark;
+  color: $light;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+a {
+  color: #72E7FF;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+figure {
+  padding-top: $space-h * 1em;
+  padding-bottom: $space-h * 1em;
+}
+
+blockquote {
+  font-family: "Six Caps", sans-serif;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  margin-left: 5%;
+
+  &:before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: -0.25em;
+  }
+
+  p:last-child:after {
+    content: "”";
+    display: inline;
+  }
+
+  sup {
+    font-size: 0.5em;
+  }
+
+  @media (min-width: $mq-md) {
+    margin-left: 0;
+  }
+  @media (min-width: $mq-lg) {
+    font-size: 4rem;
+  }
+}
+
+figcaption {
+  text-align: right;
+}
+
+sup {
+  line-height: 0;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "This is a tribute page built for freeCodeCamp.",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.7",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass css/ -o css/",
+    "sass:watch": "node-sass -w --output-style compressed --source-map true css/ -o css/",
+    "serve": "browser-sync start --server --files \"**/*.css\" \"**/*.html\" \"**/*.js\"",
+    "serve:tunnel": "browser-sync start --server --tunnel --files \"**/*.css\" \"**/*.html\" \"**/*.js\"",
+    "start": "npm-run-all -p sass:watch serve",
+    "start:tunnel": "npm-run-all -p sass:watch serve:tunnel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falldowngoboone/tribute-page.git"
+  },
+  "author": "Ryan Boone <falldowngoboone@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falldowngoboone/tribute-page/issues"
+  },
+  "homepage": "https://github.com/falldowngoboone/tribute-page#readme"
+}

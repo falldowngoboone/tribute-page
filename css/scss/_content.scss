@@ -1,0 +1,37 @@
+.content {
+  padding: (2em * $space-h) 0 0;
+
+  @media (min-width: $mq-md) {
+    padding: (3em * $space-h) 0 0;
+  }
+}
+.content:last-of-type {
+  padding-bottom: (2em * $space-h);
+
+  @media (min-width: $mq-md) {
+    padding-bottom: (3em * $space-h);
+  }
+}
+.content > * {
+  max-width: 38.888888888888889rem;
+  width: 90%;
+  margin: auto;
+
+  @media (min-width: $mq-md) {
+    width: 80%;
+  }
+}
+.content > * + * {
+  margin-top: $space-h * 1em;
+}
+
+.content__image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $mq-lg) {
+    width: 50%;
+    float: right;
+  }
+}

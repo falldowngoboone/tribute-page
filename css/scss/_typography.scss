@@ -1,0 +1,23 @@
+.heading {
+  font-family: "Six Caps", sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 1;
+
+  span {
+    font-size: 0.634615384615385em;
+    text-transform: lowercase;
+    color: $accent;
+    display: inline-block;
+    transform: translateY(-0.25em);
+  }
+
+  @media (min-width: $mq-md) {
+    font-size: 5.777777777777778rem;
+    transform: translateX(-0.25em);
+  }
+}
+
+.cite--short {
+  font-style: normal;
+}

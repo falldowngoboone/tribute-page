@@ -1,0 +1,129 @@
+header {
+  background: $light;
+  color: #000000;
+  height: 105vw;
+  max-height: 1079px; // at 1440
+  // max-height: 100vh;
+  position: relative;
+
+  @media (min-width: $mq-md) {
+    height: 75vw;
+  }
+}
+
+.header__graphic {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.circle, .rect {
+  background-color: $accent;
+  position: absolute;
+}
+
+.circle {
+  border-radius: 50%;
+}
+.circle-1 {
+  width: 17.5%;
+  padding-top: 17.5%;
+  top: -5.31254%;
+  left: 84.040625%;
+
+  @media (min-width: $mq-md) {
+    width: 19.1666666666667%;
+    padding-top: 19.1666666666667%;
+    top: 2.9657089898054%;
+    left: 76.1805555555556%;
+  }
+}
+.circle-2 {
+  width: 25%;
+  padding-top: 25%;
+  top: 14.7142857142857%;
+  left: 61.934375%;
+
+  @media (min-width: $mq-md) {
+    width: 27.2222222222222%;
+    padding-top: 27.2222222222222%;
+    top: 33.3642261353105%;
+    left: 52.1527777777778%;
+  }
+}
+.circle-3 {
+  width: 16.5625%;
+  padding-top: 16.5625%;
+  top: 50.6160714285714%;
+  left: 92.859375%;
+
+  @media (min-width: $mq-md) {
+    width: 17.9166666666667%;
+    padding-top: 17.9166666666667%;
+    top: 87.8591288229842%;
+    left: 85.7638888888889%;
+  }
+}
+.circle-4 {
+  width: 28.75%;
+  padding-top: 28.75%;
+  top: 81.8452380952381%;
+  left: 88.75%;
+
+  @media (min-width: $mq-md) {
+    width: 31.5972222222222%;
+    padding-top: 31.5972222222222%;
+    top: 51.4828544949027%;
+    left: -2.9513888888889%;
+  }
+}
+
+.rect {
+  height: 1.7857142857143%;
+
+  @media (min-width: $mq-md) {
+    height: 2.6876737720111%;
+  }
+}
+.rect-1 {
+  width: 26.25%;
+  top: 12.2440476190476%;
+  left: 72.103125%;
+  transform: rotate(-53deg);
+
+  @media (min-width: $mq-md) {
+    width: 28.4027777777778%;
+    top: 29.610750695088%;
+    left: 63.2048611111111%;
+    transform: rotate(-53deg);
+  }
+}
+.rect-2 {
+  width: 26.25%;
+  top: 41.9791666666667%;
+  left: 75.125%;
+  transform: rotate(50deg);
+
+  @media (min-width: $mq-md) {
+    width: 28.4027777777778%;
+    top: 74.7497683039852%;
+    left: 66.4902777777778%;
+    transform: rotate(50deg);
+  }
+}
+.rect-3 {
+  display: none;
+
+  @media (min-width: $mq-md) {
+    display: block;
+    width: 72.3833333333333%;
+    top: 86.3095458758109%;
+    left: 19.0840277777778%;
+    transform: rotate(13.18deg);
+    z-index: 2;
+  }
+}
